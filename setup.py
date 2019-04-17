@@ -24,7 +24,7 @@ class PyTest(TestCommand):
 
 
 setup(name='polyaxon-pip-tests',
-      version='0.0.1',
+      version='0.0.2',
       description='Polyaxon package to group all std tests pip packages used in several projects',
       long_description=read_readme(),
       maintainer='Mourad Mourafiq',
@@ -48,10 +48,12 @@ setup(name='polyaxon-pip-tests',
       ],
       install_requires=[
           'coverage==4.5.1',
+          'flake8==3.5.0',
           'flaky==3.4.0',
           'isort==4.3.4',
           'mock==2.0.0',
-          'prospector==0.12.7',
+          'pep8-naming==0.5.0',
+          'prospector==0.12.11',
           'pyflakes==1.6.0',
           'pytest==3.7.0',
           'pylint==1.8.4',
