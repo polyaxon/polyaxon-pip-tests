@@ -24,7 +24,7 @@ class PyTest(TestCommand):
 
 
 setup(name='polyaxon-pip-tests',
-      version='0.0.5',
+      version='0.0.6',
       description='Polyaxon package to group all std tests pip packages used in several projects',
       long_description=read_readme(),
       maintainer='Mourad Mourafiq',
@@ -59,7 +59,7 @@ setup(name='polyaxon-pip-tests',
           'pylint==1.8.4',
           'tox==3.1.2',
       ],
-      extra={
+      extras_require={
           'black': ['black==19.3b0'],
       },
       classifiers=[
